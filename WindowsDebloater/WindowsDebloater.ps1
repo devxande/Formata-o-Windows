@@ -54,7 +54,7 @@ $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(400,480)
 $Form.text                       = "System Cleanup (WO)"
 $Form.TopMost                    = $false
-$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 
 $Button1                         = New-Object system.Windows.Forms.Button
 $Button1.text                    = "Desinstalar Apps Desnecessários"
@@ -62,8 +62,8 @@ $Button1.width                   = 326
 $Button1.height                  = 63
 $Button1.location                = New-Object System.Drawing.Point(35,53)
 $Button1.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970") #Cor da letra
-$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070") #Cor do fundo do button
+$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10") #Cor da letra
+$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879") #Cor do fundo do button
 
 $Button2                         = New-Object system.Windows.Forms.Button
 $Button2.text                    = "Desinstalar OneDrive"
@@ -71,8 +71,8 @@ $Button2.width                   = 326
 $Button2.height                  = 63
 $Button2.location                = New-Object System.Drawing.Point(35,130)
 $Button2.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970") 
-$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
+$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10") 
+$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Button3                         = New-Object system.Windows.Forms.Button
 $Button3.text                    = "Limpar Pastas Temporárias"
@@ -80,8 +80,8 @@ $Button3.width                   = 326
 $Button3.height                  = 63
 $Button3.location                = New-Object System.Drawing.Point(35,207)
 $Button3.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
-$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
+$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Button4                         = New-Object system.Windows.Forms.Button
 $Button4.text                    = "Ativar Modo de Desempenho"
@@ -89,8 +89,8 @@ $Button4.width                   = 326
 $Button4.height                  = 63
 $Button4.location                = New-Object System.Drawing.Point(35,284)
 $Button4.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
-$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
+$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Button5                         = New-Object system.Windows.Forms.Button
 $Button5.text                    = "Desativar Telemetry"
@@ -98,8 +98,8 @@ $Button5.width                   = 326
 $Button5.height                  = 63
 $Button5.location                = New-Object System.Drawing.Point(35,361)
 $Button5.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
-$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
+$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Button6                         = New-Object system.Windows.Forms.Button
 $Button6.text                    = "Sair"
@@ -107,8 +107,8 @@ $Button6.width                   = 60
 $Button6.height                  = 30
 $Button6.location                = New-Object System.Drawing.Point(326,436)
 $Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
-$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
+$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "System Cleanup (WO)"
@@ -117,7 +117,7 @@ $Label1.width                    = 25
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(51,10)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',19,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "By: DevXande                                        Version: 1.0.1"
@@ -126,7 +126,7 @@ $Label2.width                    = 25
 $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(17,448)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 
 
 $Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,$Label1,$Label2))
@@ -135,7 +135,7 @@ $Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,
 #region Logic 
 
 $Button1.Add_Click({
-    $confirmation = [System.Windows.Forms.MessageBox]::Show('Você deseja desinstalar os aplicativos desnecessários e desativar a hibernação?', 'Confirmação', 'YesNo', 'Question')
+    $confirmation = [System.Windows.Forms.MessageBox]::Show('ATENÇÃO! Comando apenas para máquina formatada! Deseja confirmar?', 'Confirmação', 'YesNo', 'Question', 'Warning')
 
     if ($confirmation -eq 'Yes') {
         Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
