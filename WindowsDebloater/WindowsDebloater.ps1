@@ -13,24 +13,36 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 # Baixa um script que cria um ponto de restauração
-Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/carlositaloo/Formata-o-Windows/main/WindowsDebloater/restorePoint.ps1'))`"" -WindowStyle Hidden -NoNewWindow -Wait *>$null
+Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/devxande/Formata-o-Windows/main/WindowsDebloater/restorePoint.ps1'))`"" -WindowStyle Hidden -NoNewWindow -Wait *>$null
 
 Write-Host " "
 Write-Host "=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
 Write-Host "#                                                                    ="
-Write-Host "=    ___ _                      ___           _            ___  ___  #"
-Write-Host "#   / __\ | ___  __ _ _ __     / __\__ _  ___| |__   ___  / _ \/ __\ ="
-Write-Host "=  / /  | |/ _ \/ _`  | '_ \   / /  / _`  |/ __| '_ \ / _ \/ /_)/ /    #"
-Write-Host "# / /___| |  __/ (_| | | | | / /__| (_| | (__| | | |  __/ ___/ /___  ="
-Write-Host "= \____/|_|\___|\__,_|_| |_| \____/\__,_|\___|_| |_|\___\/   \____/  #"
+Write-Host "=  #####                       ##                                    #"
+Write-Host "# ##   ##                      ##                                    ="
+Write-Host "= #        ##  ##    #####    #####    ####    ##  ##                #"
+Write-Host "#  #####   ##  ##   ##         ##     ##  ##   #######               ="
+Write-Host "=      ##  ##  ##    #####     ##     ######   ## # ##               #"
+Write-Host "# ##   ##   #####        ##    ## ##  ##       ##   ##               ="
+Write-Host "=  #####       ##   ######      ###    #####   ##   ##               #"
 Write-Host "#                                                                    ="
+Write-Host "                 ###                                                 #"
+Write-Host "                  ##                                                 ="
+Write-Host "        ####      ##      ####     ####    #####    ##  ##   ######  #"
+Write-Host "       ##  ##     ##     ##  ##       ##   ##  ##   ##  ##    ##  ## ="
+Write-Host "       ##         ##     ######    #####   ##  ##   ##  ##    ##  ## #"
+Write-Host "       ##  ##     ##     ##       ##  ##   ##  ##   ##  ##    #####  ="
+Write-Host "        ####     ####     #####    #####   ##  ##    ######   ##     #"
+Write-Host "                                                             ####    ="
+Write-Host "======================================================================"
 Write-Host "=                                                                    #"
 Write-Host "#                                                                    ="
-Write-Host "=                                                                    #"
-Write-Host "#            Limpar sujeira do Computador após formatação.           ="
-Write-Host "=                                                                    #"
+Write-Host "=                 Mantenha seu sistema otimizado!                    #"
 Write-Host "#                                                                    ="
-Write-Host "=  By: iNooth                                       Version: 1.13.4  #"
+Write-Host "=             Fornece uma manutenção rápida e eficiente.             #"
+Write-Host "#                                                                    ="
+Write-Host "=                                                                    #"
+Write-Host "#  By: DevXande                                      Version: 1.0.1  ="
 Write-Host "=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
 Write-Host " "
 
@@ -49,8 +61,8 @@ $Button1.width                   = 326
 $Button1.height                  = 63
 $Button1.location                = New-Object System.Drawing.Point(35,53)
 $Button1.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000") #Cor da letra
+$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4") #Cor do fundo do button
 
 $Button2                         = New-Object system.Windows.Forms.Button
 $Button2.text                    = "Desinstalar OneDrive"
@@ -58,8 +70,8 @@ $Button2.width                   = 326
 $Button2.height                  = 63
 $Button2.location                = New-Object System.Drawing.Point(35,130)
 $Button2.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000") 
+$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4")
 
 $Button3                         = New-Object system.Windows.Forms.Button
 $Button3.text                    = "Limpar pastas Temporárias"
@@ -67,8 +79,8 @@ $Button3.width                   = 326
 $Button3.height                  = 63
 $Button3.location                = New-Object System.Drawing.Point(35,207)
 $Button3.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
+$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4")
 
 $Button4                         = New-Object system.Windows.Forms.Button
 $Button4.text                    = "Ativar modo de Desempenho"
@@ -76,8 +88,8 @@ $Button4.width                   = 326
 $Button4.height                  = 63
 $Button4.location                = New-Object System.Drawing.Point(35,284)
 $Button4.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
+$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4")
 
 $Button5                         = New-Object system.Windows.Forms.Button
 $Button5.text                    = "Desativar Telemetry"
@@ -85,8 +97,8 @@ $Button5.width                   = 326
 $Button5.height                  = 63
 $Button5.location                = New-Object System.Drawing.Point(35,361)
 $Button5.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
+$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4")
 
 $Button6                         = New-Object system.Windows.Forms.Button
 $Button6.text                    = "Sair"
@@ -94,8 +106,8 @@ $Button6.width                   = 60
 $Button6.height                  = 30
 $Button6.location                = New-Object System.Drawing.Point(326,436)
 $Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
-$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#133c5e")
+$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
+$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#a4a4a4")
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "Limpeza de formatação"
@@ -104,7 +116,7 @@ $Label1.width                    = 25
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(51,10)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',19,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
+$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "By: iNooTh                                          Version: 1.13.4"
@@ -113,7 +125,7 @@ $Label2.width                    = 25
 $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(17,448)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#ffffff")
+$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#ff0000")
 
 
 $Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,$Label1,$Label2))
