@@ -1,8 +1,8 @@
 <# 
-    iNooTh
-        version 1.10.3
+    DevXande
+        version 1.0.0
         
-    iex ([System.Text.Encoding]::UTF8.GetString((New-Object System.Net.WebClient).DownloadData('https://bit.ly/WinDebloater')))
+    iex ([System.Text.Encoding]::UTF8.GetString((New-Object System.Net.WebClient).DownloadData('https://bit.ly/system-cleanup')))
 #>
 
 # Verifica se o script está sendo executado como administrador
