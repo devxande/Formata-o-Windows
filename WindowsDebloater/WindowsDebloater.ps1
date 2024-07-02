@@ -101,14 +101,33 @@ $Button5.Font                    = New-Object System.Drawing.Font('Microsoft San
 $Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 $Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
+
+
+#**VERIFICAÇÃO DE DISCO**
+#chkdsk c: /f /x
+#
+#COMANDOS CMD ADM:
+#*  dism.exe /online /cleanup-image /restorehealth
+#*  sfc /scannow
+
+#Adicionar abaixo:
 $Button6                         = New-Object system.Windows.Forms.Button
-$Button6.text                    = "Sair"
-$Button6.width                   = 60
-$Button6.height                  = 30
-$Button6.location                = New-Object System.Drawing.Point(326,436)
-$Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Button6.text                    = "Desativar Telemetry"
+$Button6.width                   = 326
+$Button6.height                  = 63
+$Button6.location                = New-Object System.Drawing.Point(35,361)
+$Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 $Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
+
+$Button10                         = New-Object system.Windows.Forms.Button
+$Button10.text                    = "Sair"
+$Button10.width                   = 60
+$Button10.height                  = 30
+$Button10.location                = New-Object System.Drawing.Point(326,436)
+$Button10.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Button10.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Button10.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "System Cleanup (WO)"
@@ -117,25 +136,25 @@ $Label1.width                    = 25
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(51,10)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',19,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 $Label2                          = New-Object system.Windows.Forms.Label
-$Label2.text                     = "By: DevXande                                        Version: 1.0.1"
+$Label2.text                     = "By: DevXande                         Version: 1.0.1"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(17,448)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
+$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
 
-$Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,$Label1,$Label2))
+$Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,$Button10,$Label1,$Label2))
 
 
 #region Logic 
 
 $Button1.Add_Click({
-    $confirmation = [System.Windows.Forms.MessageBox]::Show('ATENÇÃO! Comando apenas para máquina formatada! Deseja confirmar?', 'Confirmação', 'YesNo', 'Question', 'Warning')
+    $confirmation = [System.Windows.Forms.MessageBox]::Show('ATENÇÃO! Comando apenas para máquina formatada! Deseja confirmar?', 'Confirmação', 'YesNo', 'Question')
 
     if ($confirmation -eq 'Yes') {
         Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
@@ -362,10 +381,10 @@ $Button4.Add_Click( {
             }
         }   
         
-        Write-Host "Ativando o modo escuro!" -ForegroundColor Cyan
-        New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0 -PropertyType DWORD -Force
-        New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name SystemUsesLightTheme -Value 0 -PropertyType DWORD -Force
-        Start-Sleep 1
+        # Write-Host "Ativando o modo escuro!" -ForegroundColor Cyan
+        # New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0 -PropertyType DWORD -Force
+        # New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name SystemUsesLightTheme -Value 0 -PropertyType DWORD -Force
+        # Start-Sleep 1
         
         Write-Host "Pronto Modo de Desempenho." -ForegroundColor Yellow
         Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#`n`n"
@@ -465,7 +484,7 @@ $Button5.Add_Click( {
 
 #############################
 
-$Button6.Add_Click( {
+$Button10.Add_Click( {
         Write-Host "Reiniciar o Explorador do Windows para aplicar as alterações" -ForegroundColor Green
         Stop-Process -Name explorer -Force
         Start-Sleep 1
