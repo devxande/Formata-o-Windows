@@ -26,14 +26,15 @@ Write-Host "=      ##  ##  ##    #####     ##     ######   ## # ##              
 Write-Host "# ##   ##   #####        ##    ## ##  ##       ##   ##               ="
 Write-Host "=  #####       ##   ######      ###    #####   ##   ##               #"
 Write-Host "#                                                                    ="
-Write-Host "                 ###                                                 #"
-Write-Host "                  ##                                                 ="
-Write-Host "        ####      ##      ####     ####    #####    ##  ##   ######  #"
-Write-Host "       ##  ##     ##     ##  ##       ##   ##  ##   ##  ##    ##  ## ="
-Write-Host "       ##         ##     ######    #####   ##  ##   ##  ##    ##  ## #"
-Write-Host "       ##  ##     ##     ##       ##  ##   ##  ##   ##  ##    #####  ="
-Write-Host "        ####     ####     #####    #####   ##  ##    ######   ##     #"
-Write-Host "                                                             ####    ="
+Write-Host "=                ###                                                 #"
+Write-Host "#                 ##                                                 ="
+Write-Host "=        ####     ##      ####     ####    #####    ##  ##   ######  #"
+Write-Host "#      ##  ##     ##     ##  ##       ##   ##  ##   ##  ##    ##  ## ="
+Write-Host "=       ##        ##     ######    #####   ##  ##   ##  ##    ##  ## #"
+Write-Host "#       ##  ##    ##     ##       ##  ##   ##  ##   ##  ##    #####  ="
+Write-Host "=        ####    ####     #####    #####   ##  ##   ######    ##     #"
+Write-Host "#                                                             ####   ="
+Write-Host "=                      ~windows optimization~                        #"
 Write-Host "======================================================================"
 Write-Host "=                                                                    #"
 Write-Host "#                                                                    ="
@@ -42,7 +43,7 @@ Write-Host "#                                                                   
 Write-Host "=             Fornece uma manutenção rápida e eficiente.             #"
 Write-Host "#                                                                    ="
 Write-Host "=                                                                    #"
-Write-Host "#  By: DevXande                                      Version: 1.0.1  ="
+Write-Host "#  System Cleanup (WO) by: DevXande                  Version: 1.0.1  ="
 Write-Host "=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
 Write-Host " "
 
@@ -51,18 +52,18 @@ Add-Type -AssemblyName System.Windows.Forms
 
 $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(400,480)
-$Form.text                       = "Limpeza do windows após Formatação"
+$Form.text                       = "System Cleanup (WO)"
 $Form.TopMost                    = $false
-$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#10212f")
+$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#213970")
 
 $Button1                         = New-Object system.Windows.Forms.Button
-$Button1.text                    = "Desinstalar APPS Desnecessários"
+$Button1.text                    = "Desinstalar Apps Desnecessários"
 $Button1.width                   = 326
 $Button1.height                  = 63
 $Button1.location                = New-Object System.Drawing.Point(35,53)
 $Button1.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989") #Cor da letra
-$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042") #Cor do fundo do button
+$Button1.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970") #Cor da letra
+$Button1.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070") #Cor do fundo do button
 
 $Button2                         = New-Object system.Windows.Forms.Button
 $Button2.text                    = "Desinstalar OneDrive"
@@ -70,26 +71,26 @@ $Button2.width                   = 326
 $Button2.height                  = 63
 $Button2.location                = New-Object System.Drawing.Point(35,130)
 $Button2.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989") 
-$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042")
+$Button2.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970") 
+$Button2.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
 
 $Button3                         = New-Object system.Windows.Forms.Button
-$Button3.text                    = "Limpar pastas Temporárias"
+$Button3.text                    = "Limpar Pastas Temporárias"
 $Button3.width                   = 326
 $Button3.height                  = 63
 $Button3.location                = New-Object System.Drawing.Point(35,207)
 $Button3.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
-$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042")
+$Button3.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Button3.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
 
 $Button4                         = New-Object system.Windows.Forms.Button
-$Button4.text                    = "Ativar modo de Desempenho"
+$Button4.text                    = "Ativar Modo de Desempenho"
 $Button4.width                   = 326
 $Button4.height                  = 63
 $Button4.location                = New-Object System.Drawing.Point(35,284)
 $Button4.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
-$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042")
+$Button4.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Button4.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
 
 $Button5                         = New-Object system.Windows.Forms.Button
 $Button5.text                    = "Desativar Telemetry"
@@ -97,8 +98,8 @@ $Button5.width                   = 326
 $Button5.height                  = 63
 $Button5.location                = New-Object System.Drawing.Point(35,361)
 $Button5.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
-$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042")
+$Button5.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
 
 $Button6                         = New-Object system.Windows.Forms.Button
 $Button6.text                    = "Sair"
@@ -106,26 +107,26 @@ $Button6.width                   = 60
 $Button6.height                  = 30
 $Button6.location                = New-Object System.Drawing.Point(326,436)
 $Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
-$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#ffe042")
+$Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#213970")
+$Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#210070")
 
 $Label1                          = New-Object system.Windows.Forms.Label
-$Label1.text                     = "Limpeza de formatação"
+$Label1.text                     = "System Cleanup (WO)"
 $Label1.AutoSize                 = $true
 $Label1.width                    = 25
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(51,10)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',19,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
-$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
+$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#213970")
 
 $Label2                          = New-Object system.Windows.Forms.Label
-$Label2.text                     = "By: DevXande                                        Version: 1.13.4"
+$Label2.text                     = "By: DevXande                                        Version: 1.0.1"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(17,448)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#e71989")
+$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#213970")
 
 
 $Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,$Label1,$Label2))
@@ -133,31 +134,36 @@ $Form.controls.AddRange(@($Button1,$Button2,$Button3,$Button4,$Button5,$Button6,
 
 #region Logic 
 
-$Button1.Add_Click( {
-    Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
-    Write-Host "`n                     Desinstalar APPS Desnecessários`n`n"
-    Write-Host "Desistalação de aplicativos iniciada" -ForegroundColor Cyan
-        
-    # Abre um novo PowerShell e executa o comando para desinstalar aplicativos
-    $process = Start-Process powershell -ArgumentList "-NoExit", "-Command", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/carlositaloo/Formata-o-Windows/main/WindowsDebloater/UninstallApps.ps1'))" -PassThru
+$Button1.Add_Click({
+    $confirmation = [System.Windows.Forms.MessageBox]::Show('Você deseja desinstalar os aplicativos desnecessários e desativar a hibernação?', 'Confirmação', 'YesNo', 'Question')
 
-    # Aguarda até que o outro PowerShell seja fechado
-    Write-Host "Aguardando o fechamento do PowerShell..."
+    if ($confirmation -eq 'Yes') {
+        Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#"
+        Write-Host "`n                     Desinstalar Apps Desnecessários`n`n"
+        Write-Host "Desistalação de aplicativos iniciada" -ForegroundColor Cyan
 
-    while (-not $process.HasExited) {
-        Start-Sleep -Milliseconds 500
+        # Abre um novo PowerShell e executa o comando para desinstalar aplicativos
+        $process = Start-Process powershell -ArgumentList "-NoExit", "-Command", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/carlositaloo/Formata-o-Windows/main/WindowsDebloater/UninstallApps.ps1'))" -PassThru
+
+        Write-Host "Aguardando o fechamento do PowerShell..."
+
+        while (-not $process.HasExited) {
+            Start-Sleep -Milliseconds 500
+        }
+
+        Write-Host "Aplicativos desnecessarios desinstalados!`n" -ForegroundColor Yellow
+
+        # Desativa a hibernação do sistema:
+        Write-Host "Desativando Hibernação" -ForegroundColor Cyan
+        powercfg.exe /hibernate off
+        Start-Sleep 3
+        Write-Host "Espaço em disco liberado!"
+        Write-Host "Hibernação Desativada!" -ForegroundColor Yellow
+
+        Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#`n`n"
+    } else {
+        Write-Host "Operação Cancelada pelo Usuário."
     }
-
-    Write-Host "Aplicativos desnecessarios desinstalados!`n" -ForegroundColor Yellow
-
-    # Desativa a hibernação do sistema:
-    Write-Host "Desativando Hibernação" -ForegroundColor Cyan
-    powercfg.exe /hibernate off
-    Start-Sleep 3
-    Write-Host "Espaço em disco liberado!"
-    Write-Host "Hibernação Desativada!" -ForegroundColor Yellow
-
-    Write-Host "`n`n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#`n`n"
 })
 
 #############################
