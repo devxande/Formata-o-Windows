@@ -112,10 +112,10 @@ $Button5.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 
 #Adicionar abaixo:
 $Button6                         = New-Object system.Windows.Forms.Button
-$Button6.text                    = "Desativar Telemetry"
+$Button6.text                    = "Verificação de Disco"
 $Button6.width                   = 326
 $Button6.height                  = 63
-$Button6.location                = New-Object System.Drawing.Point(35,361)
+$Button6.location                = New-Object System.Drawing.Point(35,438)
 $Button6.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',13,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Button6.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 $Button6.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
@@ -124,7 +124,7 @@ $Button10                         = New-Object system.Windows.Forms.Button
 $Button10.text                    = "Sair"
 $Button10.width                   = 60
 $Button10.height                  = 30
-$Button10.location                = New-Object System.Drawing.Point(326,436)
+$Button10.location                = New-Object System.Drawing.Point(326,513)
 $Button10.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Button10.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
 $Button10.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#390879")
@@ -143,7 +143,7 @@ $Label2.text                     = "By: DevXande                         Version
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(17,448)
+$Label2.location                 = New-Object System.Drawing.Point(17,513)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 $Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
