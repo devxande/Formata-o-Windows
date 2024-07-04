@@ -1,6 +1,11 @@
 # Executa CHKDSK
-cmd /c chkdsk C: /f
+$chkdskOutput = cmd /c chkdsk C: /f
 
-# O script aguardará que o usuário responda manualmente a qualquer prompt do CHKDSK
-# Após a resposta do usuário, o processo terminará e o PowerShell será fechado automaticamente
+# Verifica se há necessidade de agendamento para a verificação
+if ($chkdskOutput -like "*Deseja agendar a verificação deste volume para a próxima vez em que o sistema for reiniciado? (S/N)*") {
+    # Simula a resposta "S" automaticamente e confirma o agendamento
+    echo S | cmd /c chkdsk C: /f
+}
+
+# Fecha a janela do PowerShell
 exit
