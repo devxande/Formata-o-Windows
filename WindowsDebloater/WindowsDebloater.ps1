@@ -143,7 +143,7 @@ $Label2.text                     = "By: DevXande                         Version
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(17,513)
+$Label2.location                 = New-Object System.Drawing.Point(17,620)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 $Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#390879")
 
