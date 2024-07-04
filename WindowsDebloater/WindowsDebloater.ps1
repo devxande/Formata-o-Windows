@@ -51,7 +51,7 @@ Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 $Form                            = New-Object system.Windows.Forms.Form
-$Form.ClientSize                 = New-Object System.Drawing.Point(400,480)
+$Form.ClientSize                 = New-Object System.Drawing.Point(400,620)
 $Form.text                       = "System Cleanup (WO)"
 $Form.TopMost                    = $false
 $Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#b8df10")
