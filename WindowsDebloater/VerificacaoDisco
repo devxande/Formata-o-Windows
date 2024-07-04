@@ -1,0 +1,6 @@
+# Executa CHKDSK
+cmd /c chkdsk C: /f
+
+# O script aguardará que o usuário responda manualmente a qualquer prompt do CHKDSK
+# Após a resposta do usuário, o processo terminará e o PowerShell será fechado automaticamente
+exit
